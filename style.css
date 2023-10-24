@@ -8,3 +8,8 @@ main {
     flex: 1;
     order: 1;
 }
+
+aside {
+    order: 2;
+    margin-left: 2;
+}
