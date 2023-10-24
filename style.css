@@ -3,6 +3,15 @@
 body {
     background: #0f161c;
     font-family: 'Sometype Mono', monospace;
+    color: #c9e6ff;
+}
+
+hr {
+    border: 1px solid #84c1f5;
+}
+
+#flex {
+    display: flex;
 }
 
 #page {
@@ -18,7 +27,34 @@ main {
     background-color: #0f202e;
 }
 
+nav {
+    background-color: #0f202e;
+    border: 2px solid #84c1f5;
+    margin-bottom: 8px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 aside {
     order: 2;
-    margin-left: 2;
+    margin-left: 8px;
+    border: 2px solid #84c1f5;
+    background-color: #0f202e;
+}
+
+@media only screen and (max-width: 800px) {
+    #flex {
+        flex-wrap: wrap;
+    }
+    main {
+        order: 1;
+    }
+    aside {
+        width: 100%;
+        order: 2;
+        margin-left: 0;
+        margin-top: 8px;
+    }
 }
