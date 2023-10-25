@@ -21,27 +21,39 @@
                     <h2 id="start">Getting Started</h2>
                     <p>Now, this guide focuses on making your own personal, static website, so if you're looking for a place where you can sell your stuff or something similar to that, this guide <b>is not</b> for you.</p>
                     <p>Now that's out of the way, I will just introduce you to what web hosting service you'll be using for your personal, static website right off the bat.</p>
-                    <h2 style="text-align:center">Neocities!</h2>
+                    <h2 style="text-align:center">NeoCities!</h2>
                     <a href="https://neocities.org/">
-                        <img class="center" src="/graphics/neocities_large.gif">
+                        <img class="center" style="max-width:100%" src="/graphics/neocities_large.gif">
                     </a>
-                    <p>Neocities is a free web hosting service for static pages. The free plan that it offers is pretty good depending on what website you are planning to host. 
+
+                    <p style="font-size:smaller">(Unironically, this site was made with Github Pages.)</p>
+
+                    <p>NeoCities is a free web hosting service for static pages. The free plan that it offers is pretty good depending on what website you are planning to host. 
                     The paid plan is also pretty good, only $5/mo and you're given more features like a custom domain!</p>
 
-                    <p>Now, to get started on Neocities, create your account (of course). Once your account is created, your website is also created at the same time with all of the necessary files it needs. Now, hover and click over your username on the top-right corner and click on "Edit Site"</p>
+                    <p>Now, to get started on NeoCities, create your account (of course). Once your account is created, your website is also created at the same time with all of the necessary files it needs. Now, hover and click over your username on the top-right corner and click on "Edit Site"</p>
                     <p>We'll be focusing on these two files:</p>
                     <ul>
                         <li>index.html</li>
                         <li>style.css</li>
                     </ul>
                     <p>index.html is the main file of your website, anyone who types in the address of your website (like username.neocities.org) is directed to there. The file is also pre-written with html code so you're not stranded with a blank file. 
-                    Same goes for the "style.css" file. The "index.html" file should already link the css file with <code>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/style.css&quot; /&gt;</code>.</p>
+                    Same goes for the "style.css" file. The "index.html" file should already link the css file with <code>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/style.css&quot; /&gt;</code>. Every other HTML file that you've created on NeoCities will also be pre-written with the same code.</p>
 
                     <p>You can edit text files by hovering over the file on icon view, or by clicking on the red "Edit" button on list view.</p>
+
+                    <h2 id="folders">Folders</h2>
+                    <p>Folders are a great way to organize your website's files without it getting too cluttered. On the Edit Site page, you can create a new folder by clicking on the red button named "New Folder".</p>
+                    <p class="note">
+                        ::before
+                        Lets say that you created a folder named "sites" and you created a HTML file named "main" within the folder. The HTML file can now be accessed with "username.neocities.org/sites/main".
+                        However, if you wish for the link to be "username.neocities.org/sites" instead of "username.neocities.org/sites/main", change the HTML's file name within the folder to "index.html".
+                    </p>
                 </main>
                 <aside>
                     <h3 style="text-align:center">Page Nav</h3>
                     <p><a href="#start">Getting Started</a></p>
+                    <p><a href="#folders">Folders</a></p>
                 </aside>
             </div>
         </div>
