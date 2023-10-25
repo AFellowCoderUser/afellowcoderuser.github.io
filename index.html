@@ -26,7 +26,7 @@
                         <img class="center" style="max-width:100%" src="/graphics/neocities_large.gif">
                     </a>
 
-                    <p style="font-size:smaller">(Unironically, this site was made with Github Pages.)</p>
+                    <p style="font-size:smaller;text-align:center">(Unironically, this site was made with Github Pages.)</p>
 
                     <p>NeoCities is a free web hosting service for static pages. The free plan that it offers is pretty good depending on what website you are planning to host. 
                     The paid plan is also pretty good, only $5/mo and you're given more features like a custom domain!</p>
@@ -37,17 +37,23 @@
                         <li>index.html</li>
                         <li>style.css</li>
                     </ul>
-                    <p>index.html is the main file of your website, anyone who types in the address of your website (like username.neocities.org) is directed to there. The file is also pre-written with html code so you're not stranded with a blank file. 
-                    Same goes for the "style.css" file. The "index.html" file should already link the css file with <code>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/style.css&quot; /&gt;</code>. Every other HTML file that you've created on NeoCities will also be pre-written with the same code.</p>
+                    <p>index.html is the main file of your website, anyone who types in the address of your website (like username.neocities.org, replace username with your username) is directed to there. The file is also pre-written with html code so you're not stranded with a blank file. 
+                    Same goes for the "style.css" file. The "index.html" file should already link the CSS file with <code id="bef">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/style.css&quot; /&gt;</code>. Every other HTML file that you've created on NeoCities will also be pre-written with the same code.</p>
 
                     <p>You can edit text files by hovering over the file on icon view, or by clicking on the red "Edit" button on list view.</p>
 
                     <h2 id="folders">Folders</h2>
                     <p>Folders are a great way to organize your website's files without it getting too cluttered. On the Edit Site page, you can create a new folder by clicking on the red button named "New Folder".</p>
                     <p class="note">
-                        ::before
                         Lets say that you created a folder named "sites" and you created a HTML file named "main" within the folder. The HTML file can now be accessed with "username.neocities.org/sites/main".
                         However, if you wish for the link to be "username.neocities.org/sites" instead of "username.neocities.org/sites/main", change the HTML's file name within the folder to "index.html".
+                    </p>
+                    <p>Linking a HTML file to a CSS file is similar to how file directories work on your computer. For example, on NeoCities, to access the "style.css" file, you'll type this on the address bar:</p>
+                    <ul>
+                        <code>https://username.neocities.org/style.css</code>
+                    </ul>
+                    <p>Congrats, you just accessed the raw CSS file of your website! <a href="#bef">As mentioned before</a>, the "index.html" file is already pre-linked to that CSS file. However, if you move the "style.css" file to another folder, HTML files that try to access the CSS file with "/style.css" will no longer be able to access the file
+                        because it's in another location now. Lets say that you moved the CSS file to a folder named "css_files", 
                     </p>
                 </main>
                 <aside>
