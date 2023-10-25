@@ -10,12 +10,34 @@ hr {
     border: 1px solid #84c1f5;
 }
 
+a:link {
+    color: #00b7ff;
+}
+
+a:visited {
+    color: #00b7ff;
+}
+
+a:hover {
+    color: #00ffc8;
+}
+
+a:active {
+    color: #00ffc8;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #flex {
     display: flex;
 }
 
 #page {
-    max-width: 1150px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
@@ -42,6 +64,8 @@ aside {
     margin-left: 8px;
     border: 2px solid #84c1f5;
     background-color: #0f202e;
+    width: 250px;
+    padding: 15px;
 }
 
 @media only screen and (max-width: 800px) {
