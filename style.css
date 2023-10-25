@@ -75,7 +75,10 @@ aside {
 }
 
 code {
-    background-color: #162d41;
+    background-color: #1b3349;
+    padding: 2px;
+    border-radius: 5px;
+    border: 2px solid #84c1f5;
 }
 
 @media only screen and (max-width: 800px) {
