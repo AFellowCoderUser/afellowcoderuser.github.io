@@ -38,7 +38,8 @@
                         <li>style.css</li>
                     </ul>
                     <p>index.html is the main file of your website, anyone who types in the address of your website (like username.neocities.org, replace username with your username) is directed to there. The file is also pre-written with html code so you're not stranded with a blank file. 
-                    Same goes for the "style.css" file. The "index.html" file should already link the CSS file with <code id="bef">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/style.css&quot; /&gt;</code>. Every other HTML file that you've created on NeoCities will also be pre-written with the same code.</p>
+                    Same goes for the "style.css" file. The "index.html" file should already link the CSS file with <code>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/style.css&quot; /&gt;</code>. The <code>href=&quot;/style.css&quot; /&gt;</code> is what specifies which CSS file it wants to get.
+                    Every other HTML file that you've created on NeoCities will also be pre-written with the same code.</p>
 
                     <p>You can edit text files by hovering over the file on icon view, or by clicking on the red "Edit" button on list view.</p>
 
@@ -48,12 +49,16 @@
                         Lets say that you created a folder named "sites" and you created a HTML file named "main" within the folder. The HTML file can now be accessed with "username.neocities.org/sites/main".
                         However, if you wish for the link to be "username.neocities.org/sites" instead of "username.neocities.org/sites/main", change the HTML's file name within the folder to "index.html".
                     </p>
-                    <p>Linking a HTML file to a CSS file is similar to how file directories work on your computer. For example, on NeoCities, to access the "style.css" file, you'll type this on the address bar:</p>
+                    <p>Linking a HTML file to a CSS file is similar to how file directories work on your computer. For example, on NeoCities, to access your "style.css" file, you'll type this on the address bar:</p>
                     <ul>
                         <code>https://username.neocities.org/style.css</code>
                     </ul>
-                    <p>Congrats, you just accessed the raw CSS file of your website! <a href="#bef">As mentioned before</a>, the "index.html" file is already pre-linked to that CSS file. However, if you move the "style.css" file to another folder, HTML files that try to access the CSS file with "/style.css" will no longer be able to access the file
-                        because it's in another location now. Lets say that you moved the CSS file to a folder named "css_files", 
+                    <p>
+                        Congrats, you just accessed the raw CSS file of your website! (That is, if the CSS file is still in the main folder.) Now, if you want to access a file that's within a folder, the address bar should say something like this:
+                        <ul>
+                            <code>https://username.neocities.org/folder_name/file_name.html</code>
+                        </ul>
+                        "folder_name" is the folder's name. "file_name.html" is the file's name within that folder.
                     </p>
                 </main>
                 <aside>
