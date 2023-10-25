@@ -74,6 +74,10 @@ aside {
     padding: 15px;
 }
 
+code {
+    background-color: #162d41;
+}
+
 @media only screen and (max-width: 800px) {
     #flex {
         flex-wrap: wrap;
