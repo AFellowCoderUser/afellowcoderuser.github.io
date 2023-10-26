@@ -82,6 +82,10 @@ code {
     border: 1px solid #84c1f5;
 }
 
+pre {
+    white-space: pre-wrap;
+}
+
 .note {
     background: #84c1f5;
     border: #53a3e9;
@@ -91,16 +95,21 @@ code {
     color: #04241d;
 }
 
-@media only screen and (max-width: 800px) {
+.codesnip {
+    display: block;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 735px) {
     #flex {
         flex-wrap: wrap;
     }
     main {
-        order: 1;
+        order: 2;
     }
     aside {
         width: 100%;
-        order: 2;
+        order: 1;
         margin-left: 0;
         margin-top: 8px;
     }

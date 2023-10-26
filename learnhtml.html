@@ -22,8 +22,7 @@
                     <h2 id="start">Getting Started on HTML</h2>
                     <p>You may create another HTML file on NeoCities, or in general just use any HTML file. I recommend creating a new blank HTML file.</p>
                     <p>With your new HTML file created, your new HTML file on NeoCities should have some code already pre-written. If your new HTML file isn't on NeoCities, here's what should be on your HTML file:</p>
-                    <pre><code style="display:block">
-&lt;!DOCTYPE html&gt;
+                    <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
     &lt;head&gt;
         &lt;meta charset=&quot;UTF-8&quot;&gt;
@@ -37,7 +36,7 @@
 &lt;/html&gt;</code></pre>
                     <p>Copy and paste the code into your HTML file. This is the base of a website page. Now, lets walk through what all of that code means.</p>
                     <ul>
-                        <p><code>&lt;!DOCTYPE html&gt;</code> tells the browser that this is a HTML file. While webpages can work without that declaration, without it, it'll cause some weird behavior.</p>
+                        <p><code>&lt;!DOCTYPE html&gt;</code> tells the browser that this is a HTML file. While webpages can work without this declaration, without it, it'll cause some weird behavior.</p>
                         <p><code>&lt;html&gt;</code> is used to contain the <code>&lt;head&gt;</code> and <code>&lt;body&gt;</code>. Sometimes, it may also say <code>&lt;html lang="en"&gt;</code>, this states that the page is in english.</p>
                         <p><code>&lt;head&gt;</code> is what contains meta information of your site. <code>&lt;meta charset=&quot;UTF-8&quot;&gt;</code> is used to specify that the webpage uses the UTF-8 character set. This is needed to display symbols. The second meta tag is used to make sure that the webpage (sometimes) looks good on mobile. <code>&lt;title&gt;Your Page Title&lt;/title&gt;</code> is the page's title displayed on the tab. Finally, the <code>&lt;link&gt;</code> is used to link CSS files to the page, it's also used to link images to become the website's favicon.</p>
                         <p><code>&lt;body&gt;</code> is where all of the webpage's content is held in. Most of the website's code will be placed there.</p>
@@ -46,11 +45,36 @@
                     <p>This is the base of a webpage. The body is where you'll start and build upwards, slowly progressing until it reaches to the part where you like it.</p>
 
                     <hr>
+                    <h2 id="links">Linking Files</h2>
+                    <p>Linking a HTML file to a CSS/JS/Whatever file is similar to how file directories work on your computer.</p>
+                    <p>There are two ways to link a file to another file: <i>absolute</i> and <i>relative</i>.</p>
+                    <p>Whenever you visit a website, the slash (/) after the domain is now the file path to the HTML file you are viewing on your browser.</p>
+                    <h3 id="links-abs">Absolute Links</h3>
+                    <p>Absolute links are full links that contain the where the file is coming from. For example:</p>
+
+                    <pre><code>C:\file_name</code></pre>
+
+                    <p>or</p>
+
+                    <pre><code>https://yourwebsite.com/index.html</code></pre>
+
+                    <p>On the first example, <code>C:\</code> is the source on where "file_name" is coming from. On the second example, <code>https://yourwebsite.com</code> is the source on where "index.html" is coming from.</p>
+                    <p>You can use absolute links to link files to other files. However, you must use the absolute link when you are linking a file that is outside of your website's storage.</p>
+                    <hr>
                     <h2 id="tips">HTML Tips</h2>
+                    <p>A HTML page can have a second <code>&lt;html&gt;</code> tag. People would utilize this second <code>&lt;html&gt;</code> tag to make a sidebar that is entirely separate from the main page. It's up to you to decide what the second <code>&lt;html&gt;</code> tag should be its purpose.</p>
+                    <p>A HTML file can entirely work on its own without the use of an external CSS or JavaScript file. Not just the page being entirely just HTML, but you can include the <code>&lt;style&gt;</code> or <code>&lt;script&gt;</code> within the <code>&lt;head&gt;</code>. This can be useful if a single HTML file is <i>only</i> going to be using that CSS or JavaScript code. A tag can also have it own style (ex. <code>&lt;p style=&quot;text-align:center;&quot;&gt;</code>).</p>
+                    <p></p>
                 </main>
                 <aside>
                     <h3 align="center">Page Nav</h3>
                     <p><a href="#start">Getting Started on HTML</a></p>
+                    <p>
+                        <a href="#links"></a>
+                        <ul>
+                            <p><a href="#links-abs"></a></p>
+                        </ul>
+                    </p>
                     <p><a href="#tips">HTML Tips</a></p>
                 </aside>
             </div>
