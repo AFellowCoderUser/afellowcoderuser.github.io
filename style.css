@@ -4,6 +4,7 @@ body {
     background: #0f161c;
     font-family: 'Sometype Mono', monospace;
     color: #c9e6ff;
+    line-height: 1.5em;
 }
 
 hr {
