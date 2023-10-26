@@ -1,6 +1,6 @@
-var html = '<a href="">Home</a>';
+var html = '<a href="https://afellowcoderuser.github.io/">Home</a>';
 
-html += '<a href="">HTML</a>';
+html += '<a href="https://afellowcoderuser.github.io/learnhtml.html">HTML</a>';
 html += '<a href="">CSS</a>';
 
 document.getElementById("navbar").innerHTML = html;
