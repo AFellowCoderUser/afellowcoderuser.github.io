@@ -20,9 +20,8 @@
                     <p>This:</p>
                     <img style="width:100%;max-width:600px;height:auto;" src="/graphics/images/without.png">
 
-                    <p>But you'll prefer</p>
+                    <p>But you'll prefer this:</p>
 
-                    <p>This:</p>
                     <img style="width:100%;max-width:600px;height:auto;" src="/graphics/images/with.png">
 
                     <p>It generally looks nice, the text does not go too far to the edge of the window. It's also visually appealing, a nice dark theme instead of a sudden flashbang if you're used to the dark.</p>
@@ -30,33 +29,71 @@
                     <p>This guide will take you through the basic steps of CSS.</p>
 
                     <hr>
+                    <h2 id="basic">Very Basics to CSS</h2>
+                    <p>Here, I'll be explaining on how to make a CSS rulesets and other handy things.</p>
+
+                    <p>A CSS ruleset will look like something like this:</p>
+
+                    <pre><code class="codesnip">h1 {
+    font-weight: bold
+}
+</code></pre>
+                    <p>Here, this ruleset here says that all <code>&lt;h1&gt;</code> tags will be in <b>bold</b> without the use of the <code>&lt;bold&gt;</code> tag. You shouldn't have any empty rulesets present in your CSS file. The last shorthand property (In the example code it's <code>font-weight</code>) may have no semicolon on the end. However, if you want to add more properties to the ruleset, first add a semicolon to the previous property and repeat on the others.</p>
+
+                    <p>Like this:</p>
+
+                    <pre><code class="codesnip">h1 {
+    font-weight: bold; /*Semicolon added because there is another property added below.*/
+    color: white; /*Semicolon added. Is optional until another property is added.*/
+}
+</code></pre>
+
+                    <hr>
                     <h2 id="stst">Styles to Specific Tags</h2>
                     <p>You can assign a specific style to either a HTML tag, ID, or Class. For example:</p>
 
                     <pre><code class="codesnip">p {
-    color: red;                    
+    color: red;
 }
 </code></pre>
                 <p>This code says that all <code>&lt;p&gt;</code> tags with text between the tags will be colored red.</p>
 
                 <pre><code class="codesnip">#red {
-    color: red;                    
+    color: red;
 }
-                </code></pre>
+</code></pre>
 
                 <p>This code says that all elements that are given the <code>id=&quot;red&quot;</code> attribute will color the text within it red. IDs are not to be used more than once.</p>
 
                 <pre><code class="codesnip">.red {
-    color: red;                    
+    color: red;
 }
-                </code></pre>
+</code></pre>
 
                 <p>This code says that all elements that are given the <code>class=&quot;red&quot;</code> attribute will color the text within it red. This class can be assigned to more than one tag.</p>
+
+                <hr>
+                <h2 id="css">CSS without CSS files</h2>
+                <p>HTML should already recognize CSS code, whether it's coming from an external source or within the HTML file. You can either use the <code>&lt;style&gt;&lt;/style&gt;</code> tags in the <code>&lt;head&gt;</code>, or use <code>style=&quot;&quot;</code> within a HTML tag. For example:</p>
+
+                <pre><code class="codesnip">&lt;style&gt;
+    .center {
+        text-align: center;
+    }
+&lt;/style&gt;</code></pre>
+
+                <p>This is a very similar way to how you would write CSS code in an actual CSS file, except this CSS code is only present in the HTML file you are currently editing right now. This is useful if you are planning for the CSS code to only be used in one HTML file. If you want a specific tag to have this style, without the use of IDs or Classes, you can use:</p>
+
+                <pre><code class="codesnip">&lt;p style=&quot;text-align:center;&quot;&gt;&lt;/p&gt;</code></pre>
+                
+                <p>Here, only that specific <code>&lt;p&gt;</code> tag will have its text aligned to the center. I recommend using this method of styling if you're planning not to use this multiple times, especially when it's long.</p>
 
                 </main>
                 <aside>
                     <h3 align="center">Page Nav</h3>
-                        <p><a href="#stst">Styles to Specific Tags</a></p>
+                    <p><a href="#basic">Very Basics to CSS</a></p>
+                    <p><a href="#stst">Styles to Specific Tags</a></p>
+                    <p><a href="#css">CSS without CSS files</a></p>
                 </aside>
             </div>
         </div>
