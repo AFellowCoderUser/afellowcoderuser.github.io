@@ -50,7 +50,20 @@
 <!--TODO: explain :root and * (universal selector), explain inheritance-->
 
                     <h3 id="inherit">Inheritance</h3>
-                    <p>When you apply a style to a HTML tag, all tags </p>
+                    <p>When you apply a style to a HTML tag, the child tags will automatically inherit the parent tag's styles. However, this applies to every child tag. If you wish for a child tag inherit the style of its parent rather than the other parent </p>
+
+                    <pre><code class="codesnip">p {
+    color: #00ffc8;
+}
+
+#box {
+    color: #00b7ff;
+}
+
+#box p {
+    color: inherit;
+}</code></pre>
+                    <iframe title="Inheritance Example" width="400" height="300" src="/other_html/css_examp.html"></iframe>
 
                     <hr>
                     <h2 id="stst">Styles to Specific Tags</h2>
@@ -90,7 +103,7 @@
 
                 <pre><code class="codesnip">&lt;p style=&quot;text-align:center;&quot;&gt;&lt;/p&gt;</code></pre>
                 
-                <p>Here, only that specific <code>&lt;p&gt;</code> tag will have its text aligned to the center. I recommend using this method of styling if you're planning not to use this multiple times, especially when it's long and if you are planning to change the style (That's when Classes come in.)</p>
+                <p>Here, only that specific <code>&lt;p&gt;</code> tag will have its text aligned to the center. I recommend using this method of styling if you're planning not to use this multiple times, especially when it's long and if you are planning to change the style. (That's when Classes come in.)</p>
 
                 </main>
                 <aside>
