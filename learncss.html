@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Tebi Province - HTML</title>
+        <link rel="stylesheet" type="text/css" href="/style.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="/javascript/navbar.js"></script>
+    </head>
+    <body>
+        <div id="page">
+            <nav id="navbar">
+                <script type="text/javascript" src="/javascript/navbar.js"></script>
+            </nav>
+            <div id="flex">
+                <main>
+                    <h1 align="center">Learning CSS</h1>
+                    <p>CSS is like the skin of a website. You can use CSS to make your website pretty, design it to anything that you like. A HTML file can go on without CSS, but it'll look terrible. You wouldn't want</p>
+
+                    <p>This:</p>
+                    <img style="width:100%;max-width:600px;height:auto;" src="/graphics/images/without.png">
+
+                    <p>But you'll prefer</p>
+
+                    <p>This:</p>
+                    <img style="width:100%;max-width:600px;height:auto;" src="/graphics/images/with.png">
+
+                    <p>It generally looks nice, the text does not go too far to the edge of the window. It's also visually appealing, a nice dark theme instead of a sudden flashbang if you're used to the dark.</p>
+
+                    <p>This guide will take you through the basic steps of CSS.</p>
+
+                    <hr>
+                    <h2 id="stst">Styles to Specific Tags</h2>
+                    <p>You can assign a specific style to either a HTML tag, ID, or Class. For example:</p>
+
+                    <pre><code class="codesnip">p {
+    color: red;                    
+}
+</code></pre>
+                <p>This code says that all <code>&lt;p&gt;</code> tags with text between the tags will be colored red.</p>
+
+                <pre><code class="codesnip">#red {
+    color: red;                    
+}
+                </code></pre>
+
+                <p>This code says that all elements that are given the <code>id=&quot;red&quot;</code> attribute will color the text within it red. IDs are not to be used more than once.</p>
+
+                <pre><code class="codesnip">.red {
+    color: red;                    
+}
+                </code></pre>
+
+                <p>This code says that all elements that are given the <code>class=&quot;red&quot;</code> attribute will color the text within it red. This class can be assigned to more than one tag.</p>
+
+                </main>
+                <aside>
+                    <h3 align="center">Page Nav</h3>
+                        <p><a href="#stst">Styles to Specific Tags</a></p>
+                </aside>
+            </div>
+        </div>
+    </body>
+</html>
