@@ -2,10 +2,28 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Tebi Province - HTML</title>
+        <title>Tebi Province - CSS</title>
         <link rel="stylesheet" type="text/css" href="/style.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script type="text/javascript" src="/javascript/navbar.js"></script>
+        <style>
+            #container {
+                position: relative;
+                overflow: hidden;
+                width: 100%;
+                padding-top: 75%;
+            }
+
+            #resp-iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+            }
+        </style>
     </head>
     <body>
         <div id="page">
@@ -50,7 +68,7 @@
 <!--TODO: explain :root and * (universal selector), explain inheritance-->
 
                     <h3 id="inherit">Inheritance</h3>
-                    <p>When you apply a style to a HTML tag, the child tags will automatically inherit the parent tag's styles. However, this applies to every child tag. If you wish for a child tag inherit the style of its parent rather than the other parent </p>
+                    <p>When you apply a style to a HTML tag, the child tags will automatically inherit the parent tag's styles. However, this applies to every child tag. If you wish for a child tag inherit the style of its parent rather than the parent of the child's parent, then you'll have something similar like this:</p>
 
                     <pre><code class="codesnip">p {
     color: #00ffc8;
@@ -63,7 +81,9 @@
 #box p {
     color: inherit;
 }</code></pre>
-                    <iframe title="Inheritance Example" width="400" height="300" src="/other_html/css_examp.html"></iframe>
+                    <div id="container">
+                        <iframe id="resp-iframe" style="border: 0" title="Inheritance Example" src="/other_html/css_examp.html"></iframe>
+                    </div>
 
                     <hr>
                     <h2 id="stst">Styles to Specific Tags</h2>
