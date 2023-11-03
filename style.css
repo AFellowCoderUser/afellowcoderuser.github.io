@@ -100,6 +100,7 @@ pre {
     padding: 10px;
 }
 
+/*If the screen's width is smaller than 735px, rulesets like the #flex will apply itself to the div with the id "flex". The ruleset is automatically removed if the screen width is wider than 735px.*/
 @media only screen and (max-width: 735px) {
     #flex {
         flex-wrap: wrap;
